@@ -1,0 +1,23 @@
+{
+  "required": true,
+  "package": "dev.cloudmc.mixins",
+  "refmap": "mixins.cloudmc.refmap.json",
+  "compatibilityLevel": "JAVA_8",
+  "client": [
+    "EntityRendererMixin",
+    "FontRendererMixin",
+    "GuiIngameMenuMixin",
+    "GuiInGameMixin",
+    "GuiMainMenuMixin",
+    "GuiScreenMixin",
+    "ItemRendererMixin",
+    "MinecraftMixin",
+    "RendererLivingEntityMixin",
+    "RenderMixin",
+    "NetHandlerPlayClientMixin"
+  ],
+  "mixins": [
+    "InventoryPlayerMixin",
+    "WorldMixin"
+  ]
+}

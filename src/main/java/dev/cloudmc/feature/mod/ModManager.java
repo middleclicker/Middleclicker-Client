@@ -5,8 +5,11 @@
 
 package dev.cloudmc.feature.mod;
 
-import dev.cloudmc.feature.mod.impl.*;
-import dev.cloudmc.feature.mod.impl.AimAssistMod;
+import dev.cloudmc.feature.mod.impl.Cheats.*;
+import dev.cloudmc.feature.mod.impl.Hud.*;
+import dev.cloudmc.feature.mod.impl.Mechanic.*;
+import dev.cloudmc.feature.mod.impl.Tweaks.*;
+import dev.cloudmc.feature.mod.impl.Visual.*;
 import dev.cloudmc.feature.mod.impl.crosshair.CrosshairMod;
 
 import java.util.ArrayList;
@@ -62,9 +65,9 @@ public class ModManager {
         addMod(new FakePlayerMod());
         addMod(new ModernKeyHandlingMod());
         addMod(new HitboxesMod());
-        addMod(new KnownDetectorMod());
         addMod(new ChatTweaksMod());
         addMod(new HitselectMod());
+        addMod(new FakelagMod());
     }
 
     /**

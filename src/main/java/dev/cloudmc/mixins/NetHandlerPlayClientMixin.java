@@ -1,7 +1,7 @@
 package dev.cloudmc.mixins;
 
-import dev.cloudmc.Cloud;
-import dev.cloudmc.feature.mod.impl.HitselectMod;
+import dev.cloudmc.feature.mod.impl.Hud.ComboCounterRecode;
+import dev.cloudmc.feature.mod.impl.Cheats.HitselectMod;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.network.NetHandlerPlayClient;
 import net.minecraft.entity.Entity;
@@ -20,10 +20,10 @@ public class NetHandlerPlayClientMixin {
         byte packetType = packetIn.func_149160_c();
         if (packetType == 2) {
             if (entityID == Minecraft.getMinecraft().thePlayer.getEntityId()) {
-                Cloud.INSTANCE.comboHelper.gotHit();
+                ComboCounterRecode.gotHit();
                 HitselectMod.gotHit();
             } else {
-                Cloud.INSTANCE.comboHelper.dealtHit(entityID);
+                ComboCounterRecode.dealtHit(entityID);
                 HitselectMod.dealtHit(entityID);
             }
         }

@@ -1,6 +1,6 @@
 package dev.cloudmc.mixins;
 
-import dev.cloudmc.feature.mod.impl.ZoomMod;
+import dev.cloudmc.feature.mod.impl.Mechanic.ZoomMod;
 import net.minecraft.entity.player.InventoryPlayer;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;

@@ -1,6 +1,5 @@
 package dev.cloudmc.helpers;
 
-import dev.cloudmc.feature.mod.impl.ComboCounterRecode;
 import net.minecraft.entity.Entity;
 
 public class ComboHelper {
@@ -18,20 +17,17 @@ public class ComboHelper {
     public void dealtHit(int damagedEntityID) {
         if (potentialTarget != null && damagedEntityID == potentialTarget.getEntityId()) {
             this.combo++;
-            ComboCounterRecode.dealtHit(this.combo);
             timer.reset();
         }
     }
 
     public void gotHit() {
         this.combo = 0;
-        ComboCounterRecode.gotHit();
         timer.reset();
     }
 
     public void reset() {
         this.combo = 0;
-        ComboCounterRecode.gotHit();
         timer.reset();
     }
 

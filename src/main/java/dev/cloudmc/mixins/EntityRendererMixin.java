@@ -6,8 +6,8 @@
 package dev.cloudmc.mixins;
 
 import dev.cloudmc.Cloud;
-import dev.cloudmc.feature.mod.impl.FreelookMod;
-import dev.cloudmc.feature.mod.impl.ZoomMod;
+import dev.cloudmc.feature.mod.impl.Mechanic.FreelookMod;
+import dev.cloudmc.feature.mod.impl.Mechanic.ZoomMod;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.entity.EntityClientPlayerMP;
 import net.minecraft.client.renderer.EntityRenderer;
@@ -17,7 +17,6 @@ import net.minecraft.util.MathHelper;
 import net.minecraft.util.MovingObjectPosition;
 import net.minecraft.util.Vec3;
 import net.minecraftforge.client.ForgeHooksClient;
-import org.lwjgl.opengl.Display;
 import org.lwjgl.opengl.GL11;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Overwrite;

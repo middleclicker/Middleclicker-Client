@@ -7,7 +7,7 @@ package dev.cloudmc.gui.hudeditor.impl.impl;
 
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import dev.cloudmc.Cloud;
-import dev.cloudmc.feature.mod.impl.ToggleSprintMod;
+import dev.cloudmc.feature.mod.impl.Mechanic.ToggleSprintMod;
 import dev.cloudmc.gui.Style;
 import dev.cloudmc.gui.hudeditor.HudEditor;
 import dev.cloudmc.gui.hudeditor.impl.HudMod;

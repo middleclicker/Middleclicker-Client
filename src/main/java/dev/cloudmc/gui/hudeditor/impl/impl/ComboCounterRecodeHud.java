@@ -2,6 +2,7 @@ package dev.cloudmc.gui.hudeditor.impl.impl;
 
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import dev.cloudmc.Cloud;
+import dev.cloudmc.feature.mod.impl.Hud.ComboCounterRecode;
 import dev.cloudmc.gui.Style;
 import dev.cloudmc.gui.hudeditor.impl.HudMod;
 import dev.cloudmc.helpers.render.GLHelper;
@@ -19,7 +20,7 @@ public class ComboCounterRecodeHud extends HudMod {
     public void renderMod(int mouseX, int mouseY) {
         GLHelper.startScale(getX(), getY(), getSize());
         if (Cloud.INSTANCE.modManager.getMod(getName()).isToggled()) {
-            String text = Cloud.INSTANCE.comboHelper.getCombo() + " Combo";
+            String text = ComboCounterRecode.getCombo() + " Combo";
             if (isModern()) {
                 if (isBackground()) {
                     Helper2D.drawRoundedRectangle(getX(), getY(), getW(), getH(), 2, Style.getColor(50).getRGB(), 0);
@@ -50,7 +51,7 @@ public class ComboCounterRecodeHud extends HudMod {
     public void onRender2D(RenderGameOverlayEvent.Pre.Text e) {
         GLHelper.startScale(getX(), getY(), getSize());
         if (Cloud.INSTANCE.modManager.getMod(getName()).isToggled()) {
-            String text = Cloud.INSTANCE.comboHelper.getCombo() + " Combo";
+            String text = ComboCounterRecode.getCombo() + " Combo";
             if (isModern()) {
                 if (isBackground()) {
                     Helper2D.drawRoundedRectangle(getX(), getY(), getW(), getH(), 2, Style.getColor(50).getRGB(), 0);

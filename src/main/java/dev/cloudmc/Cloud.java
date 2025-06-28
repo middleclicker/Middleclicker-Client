@@ -8,7 +8,6 @@ package dev.cloudmc;
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
-import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import dev.cloudmc.config.ConfigLoader;
 import dev.cloudmc.config.ConfigSaver;
 import dev.cloudmc.feature.mod.ModManager;
@@ -21,12 +20,6 @@ import dev.cloudmc.helpers.MessageHelper;
 import dev.cloudmc.helpers.font.FontHelper;
 import net.minecraft.client.Minecraft;
 import net.minecraftforge.common.MinecraftForge;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-import org.apache.logging.log4j.core.LoggerContext;
-import org.apache.logging.log4j.core.filter.AbstractFilter;
-import org.apache.logging.log4j.core.LogEvent;
-import org.apache.logging.log4j.message.Message;
 import org.lwjgl.opengl.Display;
 
 import java.io.IOException;
@@ -55,7 +48,6 @@ public class Cloud {
     public FontHelper fontHelper;
     public CpsHelper cpsHelper;
     public MessageHelper messageHelper;
-    public ComboHelper comboHelper;
 
     /**
      * Initializes the client
@@ -70,8 +62,7 @@ public class Cloud {
                 optionManager = new OptionManager(),
                 hudEditor = new HudEditor(),
                 fontHelper = new FontHelper(),
-                messageHelper = new MessageHelper(),
-                comboHelper = new ComboHelper()
+                messageHelper = new MessageHelper()
         );
 
         try {

@@ -6,7 +6,7 @@
 package dev.cloudmc.helpers.render;
 
 import dev.cloudmc.Cloud;
-import dev.cloudmc.feature.mod.impl.FreelookMod;
+import dev.cloudmc.feature.mod.impl.Mechanic.FreelookMod;
 import net.minecraft.client.renderer.Tessellator;
 import net.minecraft.util.AxisAlignedBB;
 import net.minecraft.util.MathHelper;

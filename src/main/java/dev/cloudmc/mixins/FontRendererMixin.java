@@ -5,7 +5,7 @@
 
 package dev.cloudmc.mixins;
 
-import dev.cloudmc.feature.mod.impl.NickHiderMod;
+import dev.cloudmc.feature.mod.impl.Visual.NickHiderMod;
 import net.minecraft.client.gui.FontRenderer;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
